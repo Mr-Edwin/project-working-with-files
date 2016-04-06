@@ -33,8 +33,9 @@ currentWorkingDirectory = os.getcwd()
 os.makedirs(os.path.join(str(currentWorkingDirectory),'quizzes'))
 os.makedirs(os.path.join(str(currentWorkingDirectory),'answers'))
 for quizNum in range(5):
-    quizFile = open('.\\quizzes\\capitalsquiz%s.txt' % (quizNum + 1), 'w')
-    answerKeyFile = open('.\\answers\\capitalquiz_answers%s.txt' % (quizNum + 1), 'w')
+
+    quizFile = open(os.path.join('quizzes', 'capitalsquiz%s.txt' % (quizNum + 1 )), 'w')
+    answerKeyFile = open(os.path.join('answers', 'capitalquiz_answers%s.txt' % (quizNum + 1 )), 'w')
 
     quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
     quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum +1))
