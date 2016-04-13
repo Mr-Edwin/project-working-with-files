@@ -56,6 +56,6 @@ for quizNum in range(5):
             quizFile.write(' %s. %s.\n' % ('ADCB'[i],answerOptions[i]))
             quizFile.write('\n')
             answerKeyFile.write('%s. %s.\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))
-quizFile.close()
-answerKeyFile.close()
+    quizFile.close()
+    answerKeyFile.close()
     
